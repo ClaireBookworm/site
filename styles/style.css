@@ -5,7 +5,12 @@
   --body-margin: 30px; 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 html {
+  /* color: white; */
+  /* background-color: black; */
+  /* margin: 30px; */
   scroll-behavior: smooth;
   scroll-padding-top: 1em;
 }
@@ -18,20 +23,17 @@ body {
   background-color: var(--background);
 
   /* Layout */
-  margin: 0;
+  /* margin: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#wrapper {
   /* Font */
-  font-family: 'Ubuntu Mono', 'Courier New', Courier, monospace;
+  font-family: 'Space Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace;
   font-size: 18px;
   color: var(--text);
   
   /* Layout */
-  width: 900px;
+  width: 80vw;
   max-width: calc(100% - 2*var(--body-margin));
   margin: 0 var(--body-margin) var(--body-margin) var(--body-margin);
 }
@@ -51,4 +53,8 @@ ul {
 
 .copyright {
   filter: opacity(0.5);
+}
+
+.heading > h1 {
+  font-size: 7rem;
 }
